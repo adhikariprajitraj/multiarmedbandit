@@ -99,7 +99,7 @@ while running and bandit.current_trial < num_trials:
     time.sleep(1.0 / speed)
 
     # Rerun so Streamlit can handle interactions
-    st.experimental_rerun()
+    st.rerun()
 
 # Display the final results when the loop is complete
 if bandit.current_trial >= num_trials and bandit.history:
